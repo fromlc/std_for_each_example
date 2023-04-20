@@ -42,7 +42,7 @@ int main() {
     myvector.push_back(70);
 
     cout << "myvector contains:";
-    for_each(myvector.begin() + 2, myvector.end(), myfunction);
+    for_each(myvector.begin(), myvector.end(), myfunction);
     cout << '\n';
 
     return 0;
