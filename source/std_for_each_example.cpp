@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// std_for_each_example.cpp : 
+// std_for_each_example.cpp 
 // 
 // Demos the std::for_each template function with std::vector
 // 
@@ -21,7 +21,7 @@ using std::vector;
 // called by for_each
 //------------------------------------------------------------------------------
 void myfunction(int i) {  // function:
-    std::cout << ' ' << i;
+    cout << ' ' << i;
 }
 
 //------------------------------------------------------------------------------
@@ -36,10 +36,14 @@ int main() {
     myvector.push_back(10);
     myvector.push_back(20);
     myvector.push_back(30);
+    myvector.push_back(40);
+    myvector.push_back(50);
+    myvector.push_back(60);
+    myvector.push_back(70);
 
     cout << "myvector contains:";
-    for_each(myvector.begin(), myvector.end(), myfunction);
-    std::cout << '\n';
+    for_each(myvector.begin() + 2, myvector.end(), myfunction);
+    cout << '\n';
 
     return 0;
 }
